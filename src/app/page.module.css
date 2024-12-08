@@ -1,168 +1,133 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
+.Home {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  margin-right: 6%;
+  margin-left: 6%;
+  font-family: 'Times New Roman', Times, serif;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+.Header {
+  text-align: center;
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 2em;
+  border-bottom: thick double;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
+.Body {
   display: flex;
-  gap: 16px;
+  margin-top: 2%;
+  border-bottom: thick double;
+  padding-bottom: 3%;
 }
 
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
+.body p {
+  color: gray;
+}
+
+.SectionMain {
+  font-size: 0.8em;
+  min-width: 68%;
+  padding: 0;
+  padding-right: 1%;
+  font-weight: 400;
+}
+
+.HeadlineLarge {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  flex-direction: row;
+  padding-right: 0;
+  border-bottom: thin solid gray;
+  margin-bottom: 2%;
+  padding-bottom: 3%;
+  
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.LargeText {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+  width: 40%;
+  font-size: 0.8em;
+  padding-right: 2%;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
+.LargeText p {
+  font-weight: 300;
+  color: gray;
+  font-size: 1.2em;
 }
 
-.footer {
-  grid-row-start: 3;
+.SmallText {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.SmallText p {
+  font-weight: 300;
+  color: gray;
+  font-size: 1.2em;
+}
+
+
+.SectionSide {
+  min-width: 28%;
+  font-size: 0.6em;
+  font-weight: 100;
+  border-left: thin solid;
+  padding: 0;
+  padding-left: 1%;
+}
+
+.HeadlineSmall {
+  border-bottom: thin solid #c1c1c1;
+  margin-bottom: 2%;
+}
+
+.Footer {
+  display: inline;
+  padding-bottom: 0;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 220;
+  font-style: none;
+  color: grey;  
+}
+
+.Footer h3 {
+  font-family: "UnifrakturMaguntia", serif;
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  padding-top: 0.2em;
+  color: black;
+}
+
+.Footer ul {
+  list-style-type: none;
   display: flex;
-  gap: 24px;
+  justify-content: right;
+  padding:0;
+  margin:0;
+}
+.Footer li {
+  padding: 1em;
+  padding-top: 1em;
+  padding-right: 0;
 }
 
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.LargeImage {
+  margin-left: 1%;
+  width: 60%;
 }
 
-.footer img {
-  flex-shrink: 0;
+.SmallImage {
+  width: auto;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

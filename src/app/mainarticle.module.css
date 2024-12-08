@@ -1,0 +1,127 @@
+.Header {
+    text-align: center;
+    color: black;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    border-bottom: thin solid #a9a9a9;
+}
+
+.Header h4 {
+    padding: 1%;
+    margin: 0;
+}
+
+.Title {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5%;
+    border-bottom: thin solid #c6c6c6;
+    margin-bottom: 2%;
+}
+
+.Title h1 {
+    font-family: Merriweather, serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.5em;
+    margin-top: 1%;
+    margin-bottom: 0;
+    
+}
+
+.Title h2 {
+    font-family: Merriweather, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #565656;
+}
+
+.Visual {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Visual h6 {
+    font-family: Merriweather, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 0;
+    padding-right: 30%;
+}
+
+.Body {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.Body p {
+    font-family: Merriweather, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 2em;
+    padding-bottom: 0.8em;
+}
+
+.Body h5 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 0.3em;
+    padding-bottom: 0;
+    
+}
+
+.Body h6 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.Footer {
+    display: inline;
+    padding-bottom: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 220;
+    font-style: none;
+    color: grey;
+}
+
+.Footer h3 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1em;
+    border-top: thin solid #a7a5a5;
+    padding-bottom:0;
+}
+
+.Footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+    margin-right: 5%;
+    padding: 0;
+}
+.Footer li {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2em;
+}
