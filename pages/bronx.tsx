@@ -17,7 +17,7 @@ function Title() {
     return(
         <div className={styles.Title}>
             <h1>The Bronx is Burning</h1>
-            <h2>Since the beginning of the year, there have been over 60 fires throughout the borough, and it doesn't seem to be slowing down anytime soon</h2>
+            <h2>{`Since the beginning of the year, there have been over 60 fires throughout the borough, and it doesn't seem to be slowing down anytime soon`}</h2>
         </div>
     );
 }
@@ -26,7 +26,7 @@ function Visual() {
     return(
     <div className={styles.Visual}> 
         <Image src="/bb1_3x2.jpg" alt="Boy in Bronx" layout="responsive" width={3} height={2}/>
-        <h6>Since the beginning of the year, there have been over 60 fires throughout the borough, and it doesn't seem to be slowing down anytime soon</h6>
+        <h6>{`Since the beginning of the year, there have been over 60 fires throughout the borough, and it doesn't seem to be slowing down anytime soon`}</h6>
     </div>
     );
 }
@@ -72,7 +72,7 @@ function Footer() {
 export default function BronxFires() {
     return(
         <div className={styles.PageMain}>
-            <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=UnifrakturMaguntia&display=swap');</style>
+            <style>@import url({`https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=UnifrakturMaguntia&display=swap`});</style>
             <Header />
             <Title />
             <Visual />
