@@ -57,8 +57,10 @@
 }
 
 .Body {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-top: thin solid #c6c6c6;
+    margin-top: 2em;
 }
 
 .Body p {

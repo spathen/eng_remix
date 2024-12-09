@@ -1,7 +1,43 @@
 import styles from "/src/app/mainarticle.module.css";
 import Link from 'next/link';
 import Image from 'next/image';
-import '/src/app/globals.css'
+import '/src/app/globals.css';
+import { UnifrakturMaguntia, Roboto, Roboto_Mono, Merriweather } from "next/font/google";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const _unifrakturmaguntia = UnifrakturMaguntia({
+  weight: '400',
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-um',
+})
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const _roboto = Roboto({
+  weight: ['100', '300', '400', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto',
+})
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const _roboto_mono = Roboto_Mono({
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto-mono',
+})
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const _merriweather = Merriweather({
+  weight: ['300', '400', '700', '900'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-merriweather',
+})
 
 function Header() {
     return(
@@ -72,7 +108,6 @@ function Footer() {
 export default function Conspiracy() {
     return(
         <div className={styles.PageMain}>
-            <style>@import url({`https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=UnifrakturMaguntia&display=swap`});</style>
             <Header />
             <Title />
             <Visual />
