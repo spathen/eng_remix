@@ -52,8 +52,8 @@ function Header() {
 function Title() {
     return(
         <div className={styles.Title}>
-            <h1>Some of the wackiest conspiracy theories that will blow your mind</h1>
-            <h2>There has been a large influx of misinformation and conspiracy theories over the past few years on the internet, and some of them are downright wild!</h2>
+            <h1>The Unseen Forces Behind Conspiracy Theories: An Investigation</h1>
+            <h2>In a world where misinformation spreads faster than facts, conspiracy theories have found fertile ground in human psychology and online echo chambers. Why are we drawn to these narratives, and what can we do to combat their grip on society?</h2>
         </div>
     );
 }
@@ -61,8 +61,8 @@ function Title() {
 function Visual() {
     return(
     <div className={styles.Visual}> 
-        <Image src="/ct1_3x2.jpg" alt="Boy in Bronx" layout="responsive" width={3} height={2}/>
-        <h6>There has been a large influx of misinformation and conspiracy theories over the past few years on the internet, and some of them are downright wild!</h6>
+        <Image src="/ct1_3x2.png" alt="Conspiracy Theories" layout="responsive" width={3} height={2}/>
+        <h6></h6>
     </div>
     );
 }
@@ -73,19 +73,32 @@ function Body() {
             <h5>By Rahma</h5>
             <h6>Dec. 8, 2024</h6>
             <p>
-Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor enim porttitor cubilia taciti bibendum erat ex dui. Accumsan condimentum purus sem nisi orci. Nullam habitasse lectus nec morbi viverra. Id venenatis nisl pretium erat posuere pellentesque potenti dignissim. Bibendum magnis congue magna ante integer ultricies. Accumsan curae taciti senectus imperdiet felis commodo nibh scelerisque.
+                {`Psychologists and sociologists have spent decades dissecting the allure of these ideas. At the heart of conspiracy theories lie fundamental human traits: a need for certainty in chaotic times, a search for proportional explanations to major events, and a desire for exclusivity. These traits, when paired with the algorithms of social media, create a perfect storm for the spread of misinformation.`}
+            </p>
+            <h3>{`A Perfect Psychological Storm`}</h3>
+            <p>
+                {`The persistence of conspiracy theories can be traced to cognitive biases—mental shortcuts that influence how we process information. Confirmation bias leads people to seek out information that reinforces their beliefs while dismissing contradictory evidence. In an era of curated social media feeds, this tendency intensifies, creating echo chambers where only like-minded ideas circulate.`}
             </p>
             <p>
-Quis faucibus ad nisl fames a accumsan venenatis sed habitant. Posuere commodo tincidunt vestibulum platea curabitur fermentum proin montes. Mattis mollis nulla mollis ultrices vulputate nunc accumsan ullamcorper sit. Feugiat sit ac nascetur in hac euismod vehicula dui ultricies. Velit cubilia amet hendrerit commodo ultrices lacinia. Elit efficitur vehicula sollicitudin congue adipiscing ridiculus? Purus dictum viverra tellus fames fringilla. Euismod pretium malesuada odio nam vehicula. Vivamus fringilla at tortor posuere maecenas.
+                {`Similarly, proportionality bias explains why major events—like the attacks of September 11—spawn elaborate theories. For many, the scale of such a tragedy feels incompatible with a simple explanation, making conspiracy theories about government involvement or "controlled demolitions" more appealing, even when evidence doesn’t support them.`}
+            </p>
+            <h3>{`The Emotional Pull of Conspiracies`}</h3>
+            <p>
+                {`Conspiracy theories aren’t just about logic—or the lack of it. They tap into deep emotional needs, offering clarity and control in uncertain times. As psychologist Karen Douglas explains, people often turn to these ideas when they feel anxious or powerless. By framing complex events as intentional plots by powerful forces, conspiracy theories transform chaos into a story with clear villains and victims.`}
+            </p>
+            <h3>{`The Role of Social Media`}</h3>
+            <p>
+                {`The digital age has accelerated the spread of these ideas. Platforms like Facebook and Twitter amplify conspiracy theories through algorithms that favor sensational and emotionally charged content. Echo chambers form, reinforcing beliefs and isolating users from opposing viewpoints. This environment is fertile ground for movements like QAnon, which blend fringe theories with political agendas and attract millions of followers.`}
+            </p>
+            <h3>{`Rebuilding Trust in the Age of Misinformation`}</h3>
+            <p>
+                {`Combating the rise of conspiracy theories requires a multi-pronged approach. Promoting media literacy is essential, helping people critically evaluate information and recognize biases. Platforms must also take greater responsibility, curbing the spread of false narratives through fact-checking and transparency.`}
             </p>
             <p>
-Risus mus condimentum pretium eros et penatibus lorem mattis. Rhoncus ex mus cubilia sollicitudin suscipit turpis litora. Porttitor tincidunt sociosqu nam, lectus et tincidunt nisi rhoncus porta. Penatibus tempus vestibulum sed purus quisque suspendisse. Maecenas ullamcorper turpis ridiculus ex suspendisse. Bibendum nulla volutpat augue arcu elementum aliquam tellus. Per varius habitant elementum suscipit libero conubia convallis. Natoque orci senectus pretium gravida placerat penatibus lacinia.
+                {`Perhaps most importantly, rebuilding trust in institutions—government, media, education—is key. Transparency and accountability can counteract the disillusionment that drives many toward conspiracy beliefs.`}
             </p>
             <p>
-Nec pulvinar ultrices efficitur tincidunt varius urna. Ad facilisis fringilla dui maximus hac facilisis. Nisi commodo quam venenatis fringilla venenatis. Lorem imperdiet vel magnis condimentum consectetur; pellentesque egestas. Aenean vulputate ridiculus primis lobortis mauris, nibh per. Integer primis ridiculus mattis leo varius turpis. Tincidunt risus luctus viverra, tincidunt elementum litora gravida bibendum dis.
-            </p>
-            <p>
-Praesent lobortis porttitor in ultrices gravida mauris senectus suspendisse. Duis ut nunc ut senectus egestas purus. Facilisi egestas volutpat diam torquent massa nisl suscipit mi. Porta nascetur vehicula ornare platea eu. Potenti aenean platea senectus risus lobortis tristique arcu scelerisque donec. Quam montes sed dictumst iaculis molestie est ridiculus inceptos volutpat. Natoque sit malesuada varius lorem interdum elementum nullam. Maximus placerat aptent tortor magnis platea rutrum. Lacinia aliquam cras orci euismod massa suspendisse odio duis.
+                {`As society grapples with this wave of misinformation, understanding the psychology behind conspiracy theories offers a way forward. By addressing the cognitive, emotional, and social factors at play, we can begin to challenge the grip of conspiracies and foster a more informed public.`}
             </p>
         </div> 
     );

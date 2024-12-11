@@ -16,8 +16,9 @@
 }
 
 .Title {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 45em;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 5%;
     border-bottom: thin solid #c6c6c6;
     margin-bottom: 2%;
@@ -25,7 +26,7 @@
 
 .Title h1 {
     font-family: Merriweather, serif;
-    font-weight: 900;
+    font-weight: 700;
     font-style: italic;
     font-size: 2.5em;
     margin-top: 1%;
@@ -56,9 +57,28 @@
     padding-right: 30%;
 }
 
+.HarmanImage {
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: thin solid grey;
+    border-bottom: thin solid grey;
+    margin-bottom: 1.2em;
+}
+
+.HarmanImage h6 {
+    font-family: Merriweather, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8em;
+    color: gray;
+    padding-bottom: 0;
+    margin-bottom: 0.1em;
+}
 .Body {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
     border-top: thin solid #c6c6c6;
     margin-top: 2em;
 }
@@ -70,6 +90,8 @@
     font-size: 1.2em;
     line-height: 2em;
     padding-bottom: 0.8em;
+    padding-top: 0.1em;
+    margin-top: 0.1em;
 }
 
 .Body h5 {
@@ -89,6 +111,15 @@
     font-size: 1em;
     margin-top: 0;
     padding-top: 0;
+}
+
+.Body h3 {
+    font-family: Merriweather, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6em;
+    padding-bottom: 0.3em;
+    margin-bottom: 0;
 }
 
 .Footer {
@@ -126,4 +157,9 @@
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 2em;
+}
+
+.Conspiracy {
+    align-content: center;
+    justify-content: center;
 }

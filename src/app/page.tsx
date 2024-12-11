@@ -89,8 +89,8 @@ function SectionMain() {
         article="bronx"
       />
       <HeadlineLarge
-        title="Studies Show Black People are More Likely to Receive the Death Penalty than Whites"
-        subheading="Our criminal justice system is known for its bias, but just how severe are the consequences?"
+        title="The Color of Death: Racial Inequalities in U.S. Death Sentences"
+        subheading=" Studies by numerous organizations reveal disturbing biases in the U.S. death penalty system."
         image="dp1_3x2.jpg"
         alt="NPR: Virginia Repeals Death Penalty"
         article="death"
@@ -103,10 +103,10 @@ function SectionSide() {
   return (
     <div className={styles.SectionSide}>
       <HeadlineSmall
-        title="Some of the wackiest conspiracy theories that will blow your mind"
-        subheading="There has been a large influx of misinformation and conspiracy theories over the past few years on the internet, and some of them are downright wild!"
-        image="ct1_3x2.jpg"
-        alt="Public Health Post"
+        title="The Unseen Forces Behind Conspiracy Theories: An Investigation"
+        subheading=" In a world where misinformation spreads faster than facts, conspiracy theories have found fertile ground in human psychology and online echo chambers. Why are we drawn to these narratives, and what can we do to combat their grip on society?"
+        image="ct1_3x2.png"
+        alt="Conspiracy Theories"
         article="conspiracy"
       />
       <HeadlineSmall

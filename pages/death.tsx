@@ -69,26 +69,24 @@ function Visual() {
     );
 }
 
+function HarmanImage() {
+    return(
+        <div className={styles.HarmanImage}>
+            <Image src="/harman.png" alt="Statistic" layout="responsive" width={837} height={757}/>
+            <h6>{`More than 75% of executed death row defendants were convicted of killing white victims, although African Americans make up about half of all homicide victims nationwide.`}</h6>
+        </div>
+    );
+}
 function Body() {
     return (
         <div className={styles.Body}>
             <h5>By Harman Kahlon</h5>
             <h6>Dec. 8, 2024</h6>
-            <p>
-Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor enim porttitor cubilia taciti bibendum erat ex dui. Accumsan condimentum purus sem nisi orci. Nullam habitasse lectus nec morbi viverra. Id venenatis nisl pretium erat posuere pellentesque potenti dignissim. Bibendum magnis congue magna ante integer ultricies. Accumsan curae taciti senectus imperdiet felis commodo nibh scelerisque.
-            </p>
-            <p>
-Quis faucibus ad nisl fames a accumsan venenatis sed habitant. Posuere commodo tincidunt vestibulum platea curabitur fermentum proin montes. Mattis mollis nulla mollis ultrices vulputate nunc accumsan ullamcorper sit. Feugiat sit ac nascetur in hac euismod vehicula dui ultricies. Velit cubilia amet hendrerit commodo ultrices lacinia. Elit efficitur vehicula sollicitudin congue adipiscing ridiculus? Purus dictum viverra tellus fames fringilla. Euismod pretium malesuada odio nam vehicula. Vivamus fringilla at tortor posuere maecenas.
-            </p>
-            <p>
-Risus mus condimentum pretium eros et penatibus lorem mattis. Rhoncus ex mus cubilia sollicitudin suscipit turpis litora. Porttitor tincidunt sociosqu nam, lectus et tincidunt nisi rhoncus porta. Penatibus tempus vestibulum sed purus quisque suspendisse. Maecenas ullamcorper turpis ridiculus ex suspendisse. Bibendum nulla volutpat augue arcu elementum aliquam tellus. Per varius habitant elementum suscipit libero conubia convallis. Natoque orci senectus pretium gravida placerat penatibus lacinia.
-            </p>
-            <p>
-Nec pulvinar ultrices efficitur tincidunt varius urna. Ad facilisis fringilla dui maximus hac facilisis. Nisi commodo quam venenatis fringilla venenatis. Lorem imperdiet vel magnis condimentum consectetur; pellentesque egestas. Aenean vulputate ridiculus primis lobortis mauris, nibh per. Integer primis ridiculus mattis leo varius turpis. Tincidunt risus luctus viverra, tincidunt elementum litora gravida bibendum dis.
-            </p>
-            <p>
-Praesent lobortis porttitor in ultrices gravida mauris senectus suspendisse. Duis ut nunc ut senectus egestas purus. Facilisi egestas volutpat diam torquent massa nisl suscipit mi. Porta nascetur vehicula ornare platea eu. Potenti aenean platea senectus risus lobortis tristique arcu scelerisque donec. Quam montes sed dictumst iaculis molestie est ridiculus inceptos volutpat. Natoque sit malesuada varius lorem interdum elementum nullam. Maximus placerat aptent tortor magnis platea rutrum. Lacinia aliquam cras orci euismod massa suspendisse odio duis.
-            </p>
+            <p>{`Racial bias in America’s death penalty system remains an ongoing issue, revealing disturbing inequalities that challenge the country’s foundational principles of fairness and equal protection. These challenges exist in the cases of the death penalty, where black defendants are disproportionately sentenced to death, especially in cases involving white victims, while crimes against Black victims rarely result in the same punishment.`}</p>
+            <p>{`This disparity has been highlighted by numerous studies, including the famous Baldus Study, which showed that defendants accused of killing white victims are far more likely to face execution than those whose victims are black. Baldus found that the death penalty sentencing rate for white victim cases is 24.43% whereas the sentencing rate for black victim cases is 6.10%.`}</p>
+            <HarmanImage />
+            <p>{`Efforts to address these issues, such as the Batson Challenge to prevent racially biased jury selection, have shown limited success. Courts often dismiss statistical evidence of systemic bias, demanding nearly impossible proof of discriminatory intent in individual cases. Socioeconomic disparities further compound the issue, with defendants of color frequently lacking adequate legal representation and racial stereotypes pushed by the media also adding to the disparity.`}</p>
+            <p>{`Reforming the death penalty is extensive. Today, the death row population is over 41% black, even though black people are 13% of the population. Acknowledging systemic racism threatens the legitimacy of thousands of convictions and confronts deeply ingrained narratives about crime and race. Until systemic biases are addressed, the death penalty will remain a glaring symbol of inequality in American justice.`}</p>
         </div> 
     );
 }
