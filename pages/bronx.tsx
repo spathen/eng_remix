@@ -105,11 +105,10 @@ function HarmanImage() {
 function Body() {
     return (
         <div className={styles.Body}>
-            <h5>By Jaun</h5>
-            <h6>Aug. 4, 1974</h6>
+            <h5>By Juan Escamilla</h5>
+            <h6>Dec. 12, 2024</h6>
             <p>{`In the 1970s, the South Bronx was a symbol of neglect and urban decay. At one point, it was a strong, diverse, middle-class borough. However, poor urban planning and cruel ‘urban renewal’ policies along with heavy municipal budget cuts left the Bronx in a deep state of disrepair. Nothing is a greater symbol of this than the fires that swept through the Bronx throughout the 70s, but this decline began well before that night in Yankee Stadium.`}</p>
             <p>{`The first key turning point of the Bronx was the construction of the Cross Bronx Expressway. Masterminded by New York City planning commissioner Rober Moses, the Cross Bronx Expressway cut right through thriving neighborhoods all throughout the borough. The expressway displaced thousands of residents and businesses, separated communities, and led to a sharp decline in property values. Another aspect that contributed to this even further was ‘urban renewal’, a policy of identifying the poorest areas of a city as “blighted” to be bulldozed. This policy demolished block after block of homes, schools, and businesses to replace them with high-rise residential apartment projects disconnected from the wider neighborhood.`}</p>
-            <HarmanImage />
             <p>{`The fall in property value, along with favorable mortgages and the increasing attractiveness of the suburbs meant that those who were well off decided to leave the Bronx for suburbs in a trend known as White Flight. Those who remained had to put up with worsening standards of living, as New York City fell into a deep financial crisis in the 70s.`}</p>
             <p>{`The final nail in the coffin was the decision by the city to massively cut funding to municipal services, including most crucially, the fire department. This opened the door for chaos, as landlords opted to resort to arson to claim insurance money and avoid financial ruin. With the fire department being severely underfunded, these fires grew out of control and by the 80s, the Bronx lost nearly 80% of their housing stock.`}</p>
             <p>{`The night of the World Series on October 12, 1977, as the Yankees played against the LA Dodgers, the fires continued to rage on. During the game, ABC’s camera panned to show the fires just a few blocks away, giving viewers across the country a real view of what was happening in the Bronx. As the camera zoomed into the ongoing fire, commentator Howard Cosell stated "There it is, ladies and gentlemen. The Bronx is burning”`}</p>
