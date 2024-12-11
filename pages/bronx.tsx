@@ -93,15 +93,6 @@ function Visual() {
     );
 }
 
-function HarmanImage() {
-    return(
-        <div className={styles.HarmanImage}>
-            {/*<Image src="/jaun1.png" alt="Map" layout="responsive" width={1168} height={705}/>*/}
-            <h6>{`More than 75% of executed death row defendants were convicted of killing white victims, although African Americans make up about half of all homicide victims nationwide.`}</h6>
-        </div>
-    );
-}
-
 function Body() {
     return (
         <div className={styles.Body}>
