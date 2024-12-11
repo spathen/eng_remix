@@ -2,6 +2,12 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { UnifrakturMaguntia, Roboto, Roboto_Mono, Merriweather } from "next/font/google";
+import type { Metadata } from 'next'
+ 
+// either Static metadata
+export const metadata: Metadata = {
+  title: 'The Baruch Times',
+}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const _unifrakturmaguntia = UnifrakturMaguntia({
@@ -82,8 +88,8 @@ function SectionMain() {
   return (
     <div className={styles.SectionMain}>
       <HeadlineLarge
-        title="The Bronx is Burning! Firefighters in disarray!"
-        subheading="Since the beginning of the year, there have been over 60 fires throughout the borough, and it doesn't seem to be slowing down anytime soon"
+        title="When The Bronx Burned"
+        subheading={`As we look back nearly 5 decades to the night of October 12, 1977, we remember the day when, as fans cheered in Yankee Stadium watching the World Series, fire trucks blared, responding to the ever-growing fires raging through the Bronx. `}
         image="bb1_3x2.jpg"
         alt="Perla Leon: Good Morning Teacher"
         article="bronx"

@@ -3,6 +3,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import '/src/app/globals.css';
 import { UnifrakturMaguntia, Roboto, Roboto_Mono, Merriweather } from "next/font/google";
+import type { Metadata } from 'next'
+ 
+// either Static metadata
+export const metadata: Metadata = {
+  title: 'The Color of Death: Racial Inequalities in U.S. Death Sentences',
+}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const _unifrakturmaguntia = UnifrakturMaguntia({
@@ -54,8 +60,8 @@ function Header() {
 function Title() {
     return(
         <div className={styles.Title}>
-            <h1>Studies Show Black People are More Likely to Receive the Death Penalty than Whites</h1>
-            <h2>Our criminal justice system is known for its bias, but just how severe are the consequences?</h2>
+            <h1>{`The Color of Death: Racial Inequalities in U.S. Death Sentences`}</h1>
+            <h2>{`Studies by numerous organizations reveal disturbing biases in the U.S. death penalty system.`}</h2>
         </div>
     );
 }

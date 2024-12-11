@@ -64,6 +64,8 @@
     border-top: thin solid grey;
     border-bottom: thin solid grey;
     margin-bottom: 1.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
 
 .HarmanImage h6 {
@@ -162,4 +164,17 @@
 .Conspiracy {
     align-content: center;
     justify-content: center;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  height: 0;
+    padding-right: 50em;
+}
+
+.video-responsive iframe {
+  height: auto;
+  width: auto;
+    
 }

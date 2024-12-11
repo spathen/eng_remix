@@ -3,6 +3,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import '/src/app/globals.css';
 import { UnifrakturMaguntia, Roboto, Roboto_Mono, Merriweather } from "next/font/google";
+import type { Metadata } from 'next'
+ 
+// either Static metadata
+export const metadata: Metadata = {
+  title: 'We can use AI in Criminal Justice, Actually',
+}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const _unifrakturmaguntia = UnifrakturMaguntia({
@@ -73,21 +79,14 @@ function Body() {
         <div className={styles.Body}>
             <h5>By Sabeth Pathen</h5>
             <h6>Dec. 8, 2024</h6>
-            <p>
-Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor enim porttitor cubilia taciti bibendum erat ex dui. Accumsan condimentum purus sem nisi orci. Nullam habitasse lectus nec morbi viverra. Id venenatis nisl pretium erat posuere pellentesque potenti dignissim. Bibendum magnis congue magna ante integer ultricies. Accumsan curae taciti senectus imperdiet felis commodo nibh scelerisque.
-            </p>
-            <p>
-Quis faucibus ad nisl fames a accumsan venenatis sed habitant. Posuere commodo tincidunt vestibulum platea curabitur fermentum proin montes. Mattis mollis nulla mollis ultrices vulputate nunc accumsan ullamcorper sit. Feugiat sit ac nascetur in hac euismod vehicula dui ultricies. Velit cubilia amet hendrerit commodo ultrices lacinia. Elit efficitur vehicula sollicitudin congue adipiscing ridiculus? Purus dictum viverra tellus fames fringilla. Euismod pretium malesuada odio nam vehicula. Vivamus fringilla at tortor posuere maecenas.
-            </p>
-            <p>
-Risus mus condimentum pretium eros et penatibus lorem mattis. Rhoncus ex mus cubilia sollicitudin suscipit turpis litora. Porttitor tincidunt sociosqu nam, lectus et tincidunt nisi rhoncus porta. Penatibus tempus vestibulum sed purus quisque suspendisse. Maecenas ullamcorper turpis ridiculus ex suspendisse. Bibendum nulla volutpat augue arcu elementum aliquam tellus. Per varius habitant elementum suscipit libero conubia convallis. Natoque orci senectus pretium gravida placerat penatibus lacinia.
-            </p>
-            <p>
-Nec pulvinar ultrices efficitur tincidunt varius urna. Ad facilisis fringilla dui maximus hac facilisis. Nisi commodo quam venenatis fringilla venenatis. Lorem imperdiet vel magnis condimentum consectetur; pellentesque egestas. Aenean vulputate ridiculus primis lobortis mauris, nibh per. Integer primis ridiculus mattis leo varius turpis. Tincidunt risus luctus viverra, tincidunt elementum litora gravida bibendum dis.
-            </p>
-            <p>
-Praesent lobortis porttitor in ultrices gravida mauris senectus suspendisse. Duis ut nunc ut senectus egestas purus. Facilisi egestas volutpat diam torquent massa nisl suscipit mi. Porta nascetur vehicula ornare platea eu. Potenti aenean platea senectus risus lobortis tristique arcu scelerisque donec. Quam montes sed dictumst iaculis molestie est ridiculus inceptos volutpat. Natoque sit malesuada varius lorem interdum elementum nullam. Maximus placerat aptent tortor magnis platea rutrum. Lacinia aliquam cras orci euismod massa suspendisse odio duis.
-            </p>
+            <p>{`The Public has always held a negative perception of AI, for reasons good and bad. Pop culture and media has portrayed AI as a technology that will replace humans and send robots back in time to kill anyone unfortunate enough to have the last name “Connor”, and more recently, there are increasing fears of AI taking jobs from humans.`}</p>
+            <p>{`Similarly, minorities have always held a negative perception of our Criminal Justice systems, but these perceptions are justified. We have a history of exploiting and abusing minorities through our national institutions. In the mid-1900s the CDC and the former HHS experimented on minorities with syphilis, leaving them untreated when there were treatments available at the time. The CIA had Project MKUltra, where the government experimented on vulnerable people (minorities and those with disabilities) to study mind control. And fresh in people’s minds are the unjust killings of black people by police.`}</p>
+            <p>{`So it’s obvious that putting those two together wouldn’t be a great idea. But AI has come a long way, and new advances can not only help us with our issues with AI, but our issues with the Criminal Justice system as well. eXplainable AI (XAI) is a developing technology that allows us to understand how AI models come to decisions, with the goal of making black-box models transparent.`}</p>
+            <p>{`So how does transparency solve all our problems? Transparency means that AI provides justifications for its decisions, providing reasoning for risk assessments, and reasoning can be scrutinized. This means that decisions made by AI can be treated as that of a professional human that thinks and reasons, rather than a faceless algorithm that could be the sole reason for a life-altering decision.`}</p>
+            <p>{`AI can also be used to enhance human decisions. Studies show that judges can be subject to fatigue and cognitive overload, leading to an inability to accurately make decisions. AI models, trained on historical data, could make fairer decisions in scenarios like this by providing assistance to fatigued judges.`}</p>
+            <p>{`But the most promising aspect of explainability is its ability to help us dissect our own biases. If AI is technology that models itself after patterns in data, and XAI allows those patterns to be explained, then XAI can help detect inherent biases in data, allowing humans to identify and rectify those biases. If data is biased, researchers should ask themselves why, and what they can do about it.`}</p>
+            <p>{`However, it is crucial that there is extensive oversight to make sure that everything is ethical. Even with explainability, AI is deeply flawed and should not be allowed to have complete control over institutions as powerful as our Criminal Justice institutions. It is also important that the public have a say too. Even if the public has negative perceptions of the technology, they should have a voice in shaping how AI is used in their communities.`}</p>
+            <p>{`Our Criminal Justice institutions are imperfect. So is AI technology, but it still provides an incredible opportunity for us to reflect on the underlying issues of our national institutions. But in order to do so, we need to move past the fears and start having conversations on how to implement AI ethically.`}</p>
         </div> 
     );
 }

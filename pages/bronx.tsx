@@ -3,6 +3,32 @@ import Link from 'next/link';
 import Image from 'next/image';
 import '/src/app/globals.css';
 import { UnifrakturMaguntia, Roboto, Roboto_Mono, Merriweather } from "next/font/google";
+import type { Metadata } from 'next'
+import React from "react";
+import PropTypes from "prop-types";
+
+const YoutubeEmbed = ({ embedId }) => (
+  <div className="video-responsive">
+    <iframe
+      width="620"
+      height="400"
+      src={`https://www.youtube.com/embed/${embedId}`}
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      title="Embedded youtube"
+    />
+  </div>
+);
+
+YoutubeEmbed.propTypes = {
+  embedId: PropTypes.string.isRequired
+};
+ 
+// either Static metadata
+export const metadata: Metadata = {
+  title: 'The Bronx is Burning',
+}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const _unifrakturmaguntia = UnifrakturMaguntia({
@@ -52,8 +78,8 @@ function Header() {
 function Title() {
     return(
         <div className={styles.Title}>
-            <h1>The Bronx is Burning</h1>
-            <h2>{`Since the beginning of the year, there have been over 60 fires throughout the borough, and it doesn't seem to be slowing down anytime soon`}</h2>
+            <h1>When the Bronx Burned</h1>
+            <h2>{`As we look back nearly 5 decades to the night of October 12, 1977, we remember the day when, as fans cheered in Yankee Stadium watching the World Series, fire trucks blared, responding to the ever-growing fires raging through the Bronx.`}</h2>
         </div>
     );
 }
@@ -61,9 +87,18 @@ function Title() {
 function Visual() {
     return(
     <div className={styles.Visual}> 
-        <Image src="/bb1_3x2.jpg" alt="Boy in Bronx" layout="responsive" width={3} height={2}/>
-        <h6>{`Since the beginning of the year, there have been over 60 fires throughout the borough, and it doesn't seem to be slowing down anytime soon`}</h6>
+        <Image src="/bb1_3x2.png" alt="Bronx" layout="responsive" width={3} height={2}/>
+        <h6></h6>
     </div>
+    );
+}
+
+function HarmanImage() {
+    return(
+        <div className={styles.HarmanImage}>
+            {/*<Image src="/jaun1.png" alt="Map" layout="responsive" width={1168} height={705}/>*/}
+            <h6>{`More than 75% of executed death row defendants were convicted of killing white victims, although African Americans make up about half of all homicide victims nationwide.`}</h6>
+        </div>
     );
 }
 
@@ -72,21 +107,13 @@ function Body() {
         <div className={styles.Body}>
             <h5>By Jaun</h5>
             <h6>Aug. 4, 1974</h6>
-            <p>
-Lorem ipsum odor amet, consectetuer adipiscing elit. Tempor enim porttitor cubilia taciti bibendum erat ex dui. Accumsan condimentum purus sem nisi orci. Nullam habitasse lectus nec morbi viverra. Id venenatis nisl pretium erat posuere pellentesque potenti dignissim. Bibendum magnis congue magna ante integer ultricies. Accumsan curae taciti senectus imperdiet felis commodo nibh scelerisque.
-            </p>
-            <p>
-Quis faucibus ad nisl fames a accumsan venenatis sed habitant. Posuere commodo tincidunt vestibulum platea curabitur fermentum proin montes. Mattis mollis nulla mollis ultrices vulputate nunc accumsan ullamcorper sit. Feugiat sit ac nascetur in hac euismod vehicula dui ultricies. Velit cubilia amet hendrerit commodo ultrices lacinia. Elit efficitur vehicula sollicitudin congue adipiscing ridiculus? Purus dictum viverra tellus fames fringilla. Euismod pretium malesuada odio nam vehicula. Vivamus fringilla at tortor posuere maecenas.
-            </p>
-            <p>
-Risus mus condimentum pretium eros et penatibus lorem mattis. Rhoncus ex mus cubilia sollicitudin suscipit turpis litora. Porttitor tincidunt sociosqu nam, lectus et tincidunt nisi rhoncus porta. Penatibus tempus vestibulum sed purus quisque suspendisse. Maecenas ullamcorper turpis ridiculus ex suspendisse. Bibendum nulla volutpat augue arcu elementum aliquam tellus. Per varius habitant elementum suscipit libero conubia convallis. Natoque orci senectus pretium gravida placerat penatibus lacinia.
-            </p>
-            <p>
-Nec pulvinar ultrices efficitur tincidunt varius urna. Ad facilisis fringilla dui maximus hac facilisis. Nisi commodo quam venenatis fringilla venenatis. Lorem imperdiet vel magnis condimentum consectetur; pellentesque egestas. Aenean vulputate ridiculus primis lobortis mauris, nibh per. Integer primis ridiculus mattis leo varius turpis. Tincidunt risus luctus viverra, tincidunt elementum litora gravida bibendum dis.
-            </p>
-            <p>
-Praesent lobortis porttitor in ultrices gravida mauris senectus suspendisse. Duis ut nunc ut senectus egestas purus. Facilisi egestas volutpat diam torquent massa nisl suscipit mi. Porta nascetur vehicula ornare platea eu. Potenti aenean platea senectus risus lobortis tristique arcu scelerisque donec. Quam montes sed dictumst iaculis molestie est ridiculus inceptos volutpat. Natoque sit malesuada varius lorem interdum elementum nullam. Maximus placerat aptent tortor magnis platea rutrum. Lacinia aliquam cras orci euismod massa suspendisse odio duis.
-            </p>
+            <p>{`In the 1970s, the South Bronx was a symbol of neglect and urban decay. At one point, it was a strong, diverse, middle-class borough. However, poor urban planning and cruel ‘urban renewal’ policies along with heavy municipal budget cuts left the Bronx in a deep state of disrepair. Nothing is a greater symbol of this than the fires that swept through the Bronx throughout the 70s, but this decline began well before that night in Yankee Stadium.`}</p>
+            <p>{`The first key turning point of the Bronx was the construction of the Cross Bronx Expressway. Masterminded by New York City planning commissioner Rober Moses, the Cross Bronx Expressway cut right through thriving neighborhoods all throughout the borough. The expressway displaced thousands of residents and businesses, separated communities, and led to a sharp decline in property values. Another aspect that contributed to this even further was ‘urban renewal’, a policy of identifying the poorest areas of a city as “blighted” to be bulldozed. This policy demolished block after block of homes, schools, and businesses to replace them with high-rise residential apartment projects disconnected from the wider neighborhood.`}</p>
+            <HarmanImage />
+            <p>{`The fall in property value, along with favorable mortgages and the increasing attractiveness of the suburbs meant that those who were well off decided to leave the Bronx for suburbs in a trend known as White Flight. Those who remained had to put up with worsening standards of living, as New York City fell into a deep financial crisis in the 70s.`}</p>
+            <p>{`The final nail in the coffin was the decision by the city to massively cut funding to municipal services, including most crucially, the fire department. This opened the door for chaos, as landlords opted to resort to arson to claim insurance money and avoid financial ruin. With the fire department being severely underfunded, these fires grew out of control and by the 80s, the Bronx lost nearly 80% of their housing stock.`}</p>
+            <p>{`The night of the World Series on October 12, 1977, as the Yankees played against the LA Dodgers, the fires continued to rage on. During the game, ABC’s camera panned to show the fires just a few blocks away, giving viewers across the country a real view of what was happening in the Bronx. As the camera zoomed into the ongoing fire, commentator Howard Cosell stated "There it is, ladies and gentlemen. The Bronx is burning”`}</p>
+            <YoutubeEmbed embedId={`bnVH-BE9CUo`}/>
         </div> 
     );
 }

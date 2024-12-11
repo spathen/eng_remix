@@ -3,6 +3,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import '/src/app/globals.css';
 import { UnifrakturMaguntia, Roboto, Roboto_Mono, Merriweather } from "next/font/google";
+import type { Metadata } from 'next'
+ 
+// either Static metadata
+export const metadata: Metadata = {
+  title: 'The Unseen Forces Behind Conspiracy Theories: An Investigation',
+}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const _unifrakturmaguntia = UnifrakturMaguntia({
